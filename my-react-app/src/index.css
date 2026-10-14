@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  --color-primary: #0D7C66;
+  --color-primary-hover: #0A6654;
+  --color-primary-dark: #074e3f;
+  --color-primary-light: #EBF7F4;
+  --color-accent: #E5A93C;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #1F2937;
+  overflow-x: hidden;
+}
+
+/* Custom arch shape matching the hero reference */
+.hero-arch-mask {
+  border-radius: 180px 180px 24px 24px;
+}
+
+@media (min-width: 1024px) {
+  .hero-arch-mask {
+    border-radius: 195px 195px 28px 28px;
+  }
+}
+
+/* Subtle pulse and floating animations */
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-soft-float {
+  animation: softFloat 6s ease-in-out infinite;
+}
+
+/* Smooth backdrop blur */
+.glass-nav {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
