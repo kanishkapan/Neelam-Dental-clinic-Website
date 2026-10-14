@@ -6,34 +6,34 @@ export default function Hero({ onOpenBooking }) {
   return (
     <section
       id="home"
-      className="relative min-h-[92vh] flex items-center pt-28 pb-16 lg:py-0 overflow-hidden bg-gradient-to-br from-[#F8FAF9] via-[#FAFDFB] to-[#EDF8F5]"
+      className="relative min-h-[92vh] flex items-center pt-32 sm:pt-36 lg:pt-40 pb-16 lg:pb-24 overflow-hidden bg-gradient-to-br from-[#F8FAF9] via-[#FAFDFB] to-[#EDF8F5]"
     >
       {/* Background Decorative Rings / Ellipses matching reference */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
         {/* Soft radial mint glow in top right */}
-        <div className="absolute top-1/4 right-0 w-[550px] h-[550px] bg-[#D4F1E9]/45 rounded-full blur-[100px] -z-10" />
+        <div className="absolute top-1/3 right-0 w-[550px] h-[550px] bg-[#D4F1E9]/40 rounded-full blur-[100px] -z-10" />
 
-        {/* Concentric vector lines around hero portrait */}
+        {/* Concentric vector lines positioned gracefully behind portrait */}
         <svg
-          className="absolute right-0 top-1/2 -translate-y-1/2 w-[700px] lg:w-[850px] h-[850px] opacity-75 hidden sm:block"
+          className="absolute right-0 top-1/2 -translate-y-1/2 w-[720px] lg:w-[860px] h-[860px] opacity-75 hidden sm:block pointer-events-none"
           viewBox="0 0 850 850"
           fill="none"
         >
           {/* Outer mint circle */}
           <circle
             cx="580"
-            cy="420"
+            cy="460"
             r="380"
             stroke="#92E1D2"
             strokeWidth="1.2"
-            strokeOpacity="0.6"
+            strokeOpacity="0.55"
           />
 
           {/* Inner golden/sand arc curving to the left */}
           <circle
-            cx="490"
-            cy="460"
-            r="310"
+            cx="480"
+            cy="500"
+            r="320"
             stroke="#DEC4A4"
             strokeWidth="1.3"
             strokeOpacity="0.75"
@@ -42,7 +42,7 @@ export default function Hero({ onOpenBooking }) {
           {/* Subtle secondary mint arc */}
           <circle
             cx="600"
-            cy="400"
+            cy="440"
             r="260"
             stroke="#A7EBE0"
             strokeWidth="1"
@@ -52,10 +52,10 @@ export default function Hero({ onOpenBooking }) {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
           {/* Left Column: Headline, Subtitle & Conversion CTAs */}
-          <div className="lg:col-span-7 pt-4 lg:pt-0">
+          <div className="lg:col-span-7 pt-2 lg:pt-0">
             {/* Pill badge: YOUR SMILE, THOUGHTFULLY CARED FOR */}
             <div className="inline-flex items-center gap-2.5 mb-6 sm:mb-8">
               <span className="relative flex h-2.5 w-2.5">
@@ -122,11 +122,11 @@ export default function Hero({ onOpenBooking }) {
 
           </div>
 
-          {/* Right Column: Arched Doctor Portrait with concentric circular framing */}
-          <div className="lg:col-span-5 relative flex justify-center lg:justify-end items-end pt-4 sm:pt-8 lg:pt-0">
-            <div className="relative w-full max-w-[360px] sm:max-w-[420px] lg:max-w-[460px]">
+          {/* Right Column: Arched Doctor Portrait with plenty of breathing room */}
+          <div className="lg:col-span-5 relative flex justify-center lg:justify-end items-end pt-6 lg:pt-0">
+            <div className="relative w-full max-w-[340px] sm:max-w-[390px] lg:max-w-[430px]">
               
-              {/* Arched image container matching reference */}
+              {/* Arched image container matching reference with smooth arch shape */}
               <div className="relative z-10 w-full overflow-hidden hero-arch-mask shadow-[0_20px_45px_-12px_rgba(13,124,102,0.18)] bg-zinc-800">
                 <img
                   src={doctorImg}
@@ -137,8 +137,8 @@ export default function Hero({ onOpenBooking }) {
                 />
               </div>
 
-              {/* Floating clinic verification badge */}
-              <div className="absolute -bottom-4 -left-4 sm:-bottom-5 sm:-left-6 z-20 bg-white/95 backdrop-blur-md py-3 px-4 sm:px-5 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-3 animate-soft-float">
+              {/* Floating clinic verification badge cleanly positioned */}
+              <div className="absolute -bottom-4 -left-3 sm:-bottom-5 sm:-left-5 z-20 bg-white/95 backdrop-blur-md py-3 px-4 sm:px-5 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-3 animate-soft-float">
                 <div className="w-10 h-10 rounded-xl bg-[#EBF7F4] flex items-center justify-center text-[#0D7C66] font-bold text-lg">
                   ✓
                 </div>

@@ -38,9 +38,9 @@ export default function Footer({ onOpenBooking }) {
               </a>
             </div>
 
-            <div className="flex items-center gap-3 text-sm text-gray-300">
-              <MapPin className="w-4 h-4 text-teal-400 shrink-0" />
-              <span>Indore, Madhya Pradesh, India</span>
+            <div className="flex items-start gap-3 text-sm text-gray-300">
+              <MapPin className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
+              <span>1433, Kayasth Mohalla Rd, Near Bhawarlal, Bombay Bazar, Hari Phatak, Indore, M.P. 453441</span>
             </div>
           </div>
 

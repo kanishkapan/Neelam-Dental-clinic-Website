@@ -6,8 +6,9 @@ import Difference from './components/Difference';
 import AboutDoctor from './components/AboutDoctor';
 import SmileStories from './components/SmileStories';
 import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
 import Contact from './components/Contact';
+import FAQ from './components/FAQ';
+import VisitUs from './components/VisitUs';
 import Footer from './components/Footer';
 import AppointmentModal from './components/AppointmentModal';
 import { Phone, Calendar } from 'lucide-react';
@@ -46,11 +47,14 @@ export default function App() {
         {/* Verified Patient Reviews */}
         <Testimonials />
 
+        {/* Book Appointment Section (Before FAQ as requested) */}
+        <Contact onOpenBooking={() => handleOpenBooking()} />
+
         {/* Common Questions / FAQ matching exact reference */}
         <FAQ />
 
-        {/* Clinic Location & Appointment Contact */}
-        <Contact onOpenBooking={() => handleOpenBooking()} />
+        {/* Come Say Hello / Location & Google Map (After FAQ as requested) */}
+        <VisitUs />
       </main>
 
       {/* Clinic Footer */}
