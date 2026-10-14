@@ -57,35 +57,35 @@ export default function Hero({ onOpenBooking }) {
           {/* Left Column: Headline, Subtitle & Conversion CTAs */}
           <div className="lg:col-span-7 pt-2 lg:pt-0">
             {/* Pill badge: YOUR SMILE, THOUGHTFULLY CARED FOR */}
-            <div className="inline-flex items-center gap-2.5 mb-6 sm:mb-8">
-              <span className="relative flex h-2.5 w-2.5">
+            <div className="inline-flex items-center gap-2 mb-5 sm:mb-8">
+              <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#EAB308] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#EAB308]"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 sm:h-2.5 sm:w-2.5 bg-[#EAB308]"></span>
               </span>
-              <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.16em] text-[#0D7C66] uppercase font-sans">
+              <span className="text-[11px] sm:text-[13px] font-bold tracking-[0.14em] sm:tracking-[0.16em] text-[#0D7C66] uppercase font-sans">
                 YOUR SMILE, THOUGHTFULLY CARED FOR
               </span>
             </div>
 
             {/* Main Headline matching exact text and layout */}
-            <h1 className="text-[44px] sm:text-[60px] lg:text-[72px] font-bold text-[#141B2D] leading-[1.08] tracking-[-0.035em]">
+            <h1 className="text-[32px] xs:text-[38px] sm:text-[52px] md:text-[62px] lg:text-[72px] font-bold text-[#141B2D] leading-[1.1] tracking-[-0.035em]">
               Confidence <br />
               begins with a <br />
               <span className="text-[#0D8B75] font-semibold">healthy</span> smile.
             </h1>
 
             {/* Subtitle matching exact text */}
-            <p className="mt-6 sm:mt-7 text-[16.5px] sm:text-[18px] text-[#556377] leading-[1.65] max-w-xl font-normal">
+            <p className="mt-4 sm:mt-7 text-[15px] sm:text-[17.5px] text-[#556377] leading-[1.65] max-w-xl font-normal">
               Personalised dental care in Indore, led by Dr. Neelam Dwivedi.
               <br className="hidden sm:inline" />
               Modern treatment, a gentle touch, and a team that listens.
             </p>
 
             {/* Action Buttons: Book an appointment & Call now */}
-            <div className="mt-8 sm:mt-10 flex flex-wrap items-center gap-4 sm:gap-6">
+            <div className="mt-7 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-6">
               <button
                 onClick={onOpenBooking}
-                className="inline-flex items-center gap-2.5 bg-[#0D7C66] hover:bg-[#0A6654] text-white px-7 py-3.5 rounded-full text-[15px] font-semibold shadow-[0_4px_18px_rgba(13,124,102,0.28)] hover:shadow-[0_8px_25px_rgba(13,124,102,0.38)] transition-all duration-300 active:scale-95 group cursor-pointer"
+                className="inline-flex items-center justify-center gap-2.5 bg-[#0D7C66] hover:bg-[#0A6654] text-white px-7 py-3.5 rounded-full text-[15px] font-semibold shadow-[0_4px_18px_rgba(13,124,102,0.28)] hover:shadow-[0_8px_25px_rgba(13,124,102,0.38)] transition-all duration-300 active:scale-95 group cursor-pointer"
               >
                 <span>Book an appointment</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-200 stroke-[2.2]" />
@@ -93,38 +93,38 @@ export default function Hero({ onOpenBooking }) {
 
               <a
                 href="tel:09009590693"
-                className="inline-flex items-center gap-3 text-[#141B2D] hover:text-[#0D7C66] transition-colors py-2 px-3 rounded-full group font-sans"
+                className="inline-flex items-center justify-center gap-3 text-[#141B2D] hover:text-[#0D7C66] transition-colors py-2 px-3 rounded-full group font-sans"
               >
-                <div className="w-10 h-10 rounded-full bg-[#E2F5F0] text-[#0D7C66] flex items-center justify-center group-hover:scale-105 group-hover:bg-[#d4efe8] transition-all duration-200">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#E2F5F0] text-[#0D7C66] flex items-center justify-center group-hover:scale-105 group-hover:bg-[#d4efe8] transition-all duration-200">
                   <Phone className="w-4 h-4 stroke-[2.4]" />
                 </div>
-                <span className="font-semibold text-[15.5px] text-[#141B2D] group-hover:text-[#0D7C66] transition-colors">
+                <span className="font-semibold text-[15px] sm:text-[15.5px] text-[#141B2D] group-hover:text-[#0D7C66] transition-colors">
                   Call now
                 </span>
               </a>
             </div>
 
             {/* Quick trust metrics */}
-            <div className="mt-10 pt-7 border-t border-[#E2E8F0]/80 grid grid-cols-3 max-w-lg gap-4">
+            <div className="mt-8 sm:mt-10 pt-6 sm:pt-7 border-t border-[#E2E8F0]/80 grid grid-cols-3 max-w-lg gap-2 sm:gap-4">
               <div>
-                <div className="text-xl sm:text-2xl font-bold text-[#141B2D]">12+</div>
-                <div className="text-xs sm:text-[13px] text-[#64748B]">Years Experience</div>
+                <div className="text-base sm:text-2xl font-bold text-[#141B2D]">12+</div>
+                <div className="text-[10px] sm:text-[13px] text-[#64748B]">Years Experience</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl font-bold text-[#141B2D]">10,000+</div>
-                <div className="text-xs sm:text-[13px] text-[#64748B]">Happy Smiles</div>
+                <div className="text-base sm:text-2xl font-bold text-[#141B2D]">10,000+</div>
+                <div className="text-[10px] sm:text-[13px] text-[#64748B]">Happy Smiles</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl font-bold text-[#0D7C66]">4.9 ★</div>
-                <div className="text-xs sm:text-[13px] text-[#64748B]">Google Indore</div>
+                <div className="text-base sm:text-2xl font-bold text-[#0D7C66]">4.9 ★</div>
+                <div className="text-[10px] sm:text-[13px] text-[#64748B]">Google Indore</div>
               </div>
             </div>
 
           </div>
 
           {/* Right Column: Arched Doctor Portrait with plenty of breathing room */}
-          <div className="lg:col-span-5 relative flex justify-center lg:justify-end items-end pt-6 lg:pt-0">
-            <div className="relative w-full max-w-[340px] sm:max-w-[390px] lg:max-w-[430px]">
+          <div className="lg:col-span-5 relative flex justify-center lg:justify-end items-end pt-8 lg:pt-0">
+            <div className="relative w-full max-w-[280px] xs:max-w-[330px] sm:max-w-[390px] lg:max-w-[430px]">
               
               {/* Arched image container matching reference with smooth arch shape */}
               <div className="relative z-10 w-full overflow-hidden hero-arch-mask shadow-[0_20px_45px_-12px_rgba(13,124,102,0.18)] bg-zinc-800">
@@ -138,14 +138,14 @@ export default function Hero({ onOpenBooking }) {
               </div>
 
               {/* Floating clinic verification badge cleanly positioned */}
-              <div className="absolute -bottom-4 -left-3 sm:-bottom-5 sm:-left-5 z-20 bg-white/95 backdrop-blur-md py-3 px-4 sm:px-5 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-3 animate-soft-float">
-                <div className="w-10 h-10 rounded-xl bg-[#EBF7F4] flex items-center justify-center text-[#0D7C66] font-bold text-lg">
+              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:-bottom-5 sm:-left-5 z-20 bg-white/95 backdrop-blur-md py-2 px-3 sm:py-3 sm:px-5 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-2 sm:gap-3 animate-soft-float max-w-[calc(100vw-2.5rem)] sm:max-w-none">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-[#EBF7F4] flex items-center justify-center text-[#0D7C66] font-bold text-base sm:text-lg shrink-0">
                   ✓
                 </div>
-                <div>
-                  <div className="text-xs font-semibold text-[#0D7C66] uppercase tracking-wider">Verified Clinic</div>
-                  <div className="text-sm font-bold text-[#141B2D]">Dr. Neelam Dwivedi</div>
-                  <div className="text-[11px] text-[#64748B]">Senior Dental Surgeon (Indore)</div>
+                <div className="min-w-0">
+                  <div className="text-[10px] sm:text-xs font-semibold text-[#0D7C66] uppercase tracking-wider truncate">Verified Clinic</div>
+                  <div className="text-xs sm:text-sm font-bold text-[#141B2D] truncate">Dr. Neelam Dwivedi</div>
+                  <div className="text-[10px] sm:text-[11px] text-[#64748B] truncate">Senior Dental Surgeon (Indore)</div>
                 </div>
               </div>
 

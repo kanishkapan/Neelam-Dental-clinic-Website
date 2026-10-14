@@ -58,16 +58,16 @@ export default function AppointmentModal({ isOpen, onClose, initialService }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
       <div
-        className="relative bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-gray-100 transform transition-all"
+        className="relative bg-white rounded-3xl max-w-lg w-full p-5 sm:p-8 shadow-2xl border border-gray-100 transform transition-all max-h-[92vh] overflow-y-auto"
         role="dialog"
         aria-modal="true"
       >
         {/* Close Button */}
         <button
           onClick={resetAndClose}
-          className="absolute top-5 right-5 w-9 h-9 rounded-full bg-gray-100 text-gray-500 hover:text-gray-900 hover:bg-gray-200 flex items-center justify-center transition-colors cursor-pointer"
+          className="absolute top-4 right-4 sm:top-5 sm:right-5 w-9 h-9 rounded-full bg-gray-100 text-gray-500 hover:text-gray-900 hover:bg-gray-200 flex items-center justify-center transition-colors cursor-pointer z-10"
           aria-label="Close modal"
         >
           <X className="w-5 h-5" />
@@ -75,19 +75,19 @@ export default function AppointmentModal({ isOpen, onClose, initialService }) {
 
         {step === 'form' ? (
           <div>
-            <div className="mb-6">
-              <span className="text-xs font-bold text-[#0D7C66] tracking-wider uppercase bg-[#EBF7F4] px-3 py-1 rounded-full">
+            <div className="mb-5 sm:mb-6 pr-8">
+              <span className="text-[11px] sm:text-xs font-bold text-[#0D7C66] tracking-wider uppercase bg-[#EBF7F4] px-3 py-1 rounded-full">
                 Neelam Dental Clinic • Indore
               </span>
-              <h3 className="text-2xl font-bold text-[#141B2D] mt-2.5">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#141B2D] mt-2.5">
                 Book Your Dental Appointment
               </h3>
-              <p className="text-sm text-gray-500 mt-1">
+              <p className="text-xs sm:text-sm text-gray-500 mt-1">
                 Consult with Dr. Neelam Dwivedi. No advance payment required.
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-3.5 sm:space-y-4">
               <div>
                 <label className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">
                   Full Name *
@@ -100,7 +100,7 @@ export default function AppointmentModal({ isOpen, onClose, initialService }) {
                     placeholder="Enter your name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none"
+                    className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 text-[16px] sm:text-sm focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none"
                   />
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function AppointmentModal({ isOpen, onClose, initialService }) {
                     placeholder="10-digit mobile number"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none"
+                    className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 text-[16px] sm:text-sm focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none"
                   />
                 </div>
               </div>
@@ -129,7 +129,7 @@ export default function AppointmentModal({ isOpen, onClose, initialService }) {
                 <select
                   value={formData.service}
                   onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm bg-white focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none"
+                  className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-[16px] sm:text-sm bg-white focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none"
                 >
                   {services.map((svc) => (
                     <option key={svc} value={svc}>
@@ -149,7 +149,7 @@ export default function AppointmentModal({ isOpen, onClose, initialService }) {
                     required
                     value={formData.date}
                     onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                    className="w-full px-3 py-2.5 rounded-xl border border-gray-200 text-sm focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none"
+                    className="w-full px-3 py-2.5 rounded-xl border border-gray-200 text-[16px] sm:text-sm focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none"
                   />
                 </div>
 
@@ -160,7 +160,7 @@ export default function AppointmentModal({ isOpen, onClose, initialService }) {
                   <select
                     value={formData.slot}
                     onChange={(e) => setFormData({ ...formData, slot: e.target.value })}
-                    className="w-full px-3 py-2.5 rounded-xl border border-gray-200 text-sm bg-white focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none"
+                    className="w-full px-3 py-2.5 rounded-xl border border-gray-200 text-[16px] sm:text-sm bg-white focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none"
                   >
                     {slots.map((slot) => (
                       <option key={slot} value={slot}>
@@ -180,7 +180,7 @@ export default function AppointmentModal({ isOpen, onClose, initialService }) {
                   placeholder="e.g. Bleeding gum, mild sensitivity..."
                   value={formData.note}
                   onChange={(e) => setFormData({ ...formData, note: e.target.value })}
-                  className="w-full px-4 py-2 rounded-xl border border-gray-200 text-sm focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none"
+                  className="w-full px-4 py-2 rounded-xl border border-gray-200 text-[16px] sm:text-sm focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none"
                 />
               </div>
 

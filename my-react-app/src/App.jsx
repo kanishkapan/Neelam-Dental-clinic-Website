@@ -23,7 +23,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAF9] text-[#1E293B] flex flex-col font-sans selection:bg-[#0D7C66] selection:text-white relative">
+    <div className="min-h-screen bg-[#F8FAF9] text-[#1E293B] flex flex-col font-sans selection:bg-[#0D7C66] selection:text-white relative overflow-x-hidden">
       {/* Navigation Header */}
       <Navbar onOpenBooking={() => handleOpenBooking()} />
 

@@ -76,7 +76,7 @@ export default function Services({ onOpenBooking }) {
             </div>
 
             {/* Headline matching exact 2-line styling */}
-            <h2 className="text-[36px] sm:text-[44px] lg:text-[50px] font-bold leading-[1.12] tracking-[-0.03em]">
+            <h2 className="text-[30px] xs:text-[36px] sm:text-[44px] lg:text-[50px] font-bold leading-[1.12] tracking-[-0.03em]">
               <span className="text-[#141B2D] block">Thoughtful care for every</span>
               <span className="text-[#8B98A9] block font-medium">stage of your smile.</span>
             </h2>

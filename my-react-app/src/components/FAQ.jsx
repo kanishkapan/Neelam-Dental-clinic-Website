@@ -49,7 +49,7 @@ export default function FAQ() {
             </div>
 
             {/* Main Headline */}
-            <h2 className="text-[38px] sm:text-[46px] lg:text-[54px] font-bold text-[#141B2D] leading-[1.08] tracking-[-0.035em]">
+            <h2 className="text-[30px] xs:text-[36px] sm:text-[46px] lg:text-[54px] font-bold text-[#141B2D] leading-[1.1] tracking-[-0.035em]">
               A little more <br />
               <span className="text-[#0D8B75]">peace of mind.</span>
             </h2>

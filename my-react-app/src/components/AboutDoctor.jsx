@@ -23,15 +23,15 @@ export default function AboutDoctor({ onOpenBooking }) {
               </div>
 
               {/* Floating Badge: Doctor-led care */}
-              <div className="absolute -bottom-4 right-2 sm:-bottom-5 sm:-right-4 z-20 bg-white/98 backdrop-blur-md py-3.5 px-5 rounded-2xl shadow-[0_12px_30px_-6px_rgba(0,0,0,0.12)] border border-[#EBF2F3] flex items-center gap-3.5 animate-soft-float">
-                <div className="w-10 h-10 rounded-xl bg-[#E6F5F1] text-[#0D7C66] flex items-center justify-center shrink-0">
-                  <Award className="w-5 h-5 stroke-[2.2]" />
+              <div className="absolute -bottom-4 right-2 sm:-bottom-5 sm:-right-4 z-20 bg-white/98 backdrop-blur-md py-2.5 px-4 sm:py-3.5 sm:px-5 rounded-2xl shadow-[0_12px_30px_-6px_rgba(0,0,0,0.12)] border border-[#EBF2F3] flex items-center gap-2.5 sm:gap-3.5 animate-soft-float max-w-[calc(100%-1rem)]">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-[#E6F5F1] text-[#0D7C66] flex items-center justify-center shrink-0">
+                  <Award className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.2]" />
                 </div>
                 <div>
-                  <h4 className="text-[14px] font-bold text-[#141B2D] leading-tight">
+                  <h4 className="text-[13px] sm:text-[14px] font-bold text-[#141B2D] leading-tight">
                     Doctor-led care
                   </h4>
-                  <p className="text-[12px] text-[#64748B] mt-0.5 leading-tight">
+                  <p className="text-[11px] sm:text-[12px] text-[#64748B] mt-0.5 leading-tight">
                     Every visit, every detail
                   </p>
                 </div>
@@ -49,45 +49,45 @@ export default function AboutDoctor({ onOpenBooking }) {
             </div>
 
             {/* Headline matching exact two-tone styling */}
-            <h2 className="text-[38px] sm:text-[46px] lg:text-[54px] font-bold text-[#141B2D] leading-[1.08] tracking-[-0.035em]">
+            <h2 className="text-[30px] xs:text-[36px] sm:text-[46px] lg:text-[54px] font-bold text-[#141B2D] leading-[1.1] tracking-[-0.035em]">
               Care that feels <span className="text-[#0D8B75]">personal.</span>
             </h2>
 
             {/* Quote statement */}
-            <p className="text-[17px] sm:text-[19px] font-bold text-[#141B2D] leading-[1.4] mt-6 sm:mt-7 mb-3">
+            <p className="text-[16px] sm:text-[19px] font-bold text-[#141B2D] leading-[1.4] mt-5 sm:mt-7 mb-3">
               “Your comfort is not an extra. It is the foundation of good dentistry.”
             </p>
 
             {/* Bio paragraph */}
-            <p className="text-[15px] sm:text-[16px] text-[#556377] leading-[1.68] max-w-xl mb-9">
+            <p className="text-[14.5px] sm:text-[16px] text-[#556377] leading-[1.68] max-w-xl mb-8 sm:mb-9">
               Dr. Neelam Dwivedi believes the best dental care starts with a conversation. Her approach combines precise clinical expertise with the warmth and patience that make every patient feel heard.
             </p>
 
-            {/* 3 Metrics: 12+ / 8 / 2k+ */}
-            <div className="flex flex-wrap items-center gap-8 sm:gap-14 mb-9 pt-2">
+            {/* 3 Metrics: 12+ / 8 / 2k+ with responsive layout */}
+            <div className="grid grid-cols-3 max-w-sm sm:max-w-none sm:flex sm:flex-wrap items-center gap-3 sm:gap-14 mb-9 pt-2">
               <div>
-                <div className="text-[32px] sm:text-[38px] font-extrabold text-[#0D7C66] leading-none tracking-tight">
+                <div className="text-[28px] sm:text-[38px] font-extrabold text-[#0D7C66] leading-none tracking-tight">
                   12+
                 </div>
-                <div className="text-[13px] text-[#64748B] font-medium mt-1.5">
+                <div className="text-[12px] sm:text-[13px] text-[#64748B] font-medium mt-1 sm:mt-1.5">
                   Years experience
                 </div>
               </div>
 
               <div>
-                <div className="text-[32px] sm:text-[38px] font-extrabold text-[#0D7C66] leading-none tracking-tight">
+                <div className="text-[28px] sm:text-[38px] font-extrabold text-[#0D7C66] leading-none tracking-tight">
                   8
                 </div>
-                <div className="text-[13px] text-[#64748B] font-medium mt-1.5">
+                <div className="text-[12px] sm:text-[13px] text-[#64748B] font-medium mt-1 sm:mt-1.5">
                   Specialities
                 </div>
               </div>
 
               <div>
-                <div className="text-[32px] sm:text-[38px] font-extrabold text-[#0D7C66] leading-none tracking-tight">
+                <div className="text-[28px] sm:text-[38px] font-extrabold text-[#0D7C66] leading-none tracking-tight">
                   2k+
                 </div>
-                <div className="text-[13px] text-[#64748B] font-medium mt-1.5">
+                <div className="text-[12px] sm:text-[13px] text-[#64748B] font-medium mt-1 sm:mt-1.5">
                   Smiles helped
                 </div>
               </div>

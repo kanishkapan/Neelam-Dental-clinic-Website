@@ -48,7 +48,7 @@ export default function Difference() {
             </div>
 
             {/* Headline matching exact two-tone styling */}
-            <h2 className="text-[38px] sm:text-[46px] lg:text-[52px] font-bold leading-[1.1] tracking-[-0.035em]">
+            <h2 className="text-[30px] xs:text-[36px] sm:text-[46px] lg:text-[52px] font-bold leading-[1.1] tracking-[-0.035em]">
               <span className="text-[#141B2D]">Designed around </span>
               <span className="text-[#0D8B75]">you.</span>
             </h2>
@@ -56,7 +56,7 @@ export default function Difference() {
 
           {/* Right Subtitle matching exact text */}
           <div className="max-w-xs lg:pb-1">
-            <p className="text-[14.5px] sm:text-[15.5px] text-[#64748B] leading-[1.6]">
+            <p className="text-[14px] sm:text-[15.5px] text-[#64748B] leading-[1.6]">
               A calmer, clearer way to experience modern dentistry.
             </p>
           </div>
@@ -75,7 +75,7 @@ export default function Difference() {
             return (
               <div
                 key={index}
-                className={`p-8 sm:p-9 transition-colors duration-200 hover:bg-[#F9FCFB] flex flex-col justify-between min-h-[200px] ${
+                className={`p-6 sm:p-9 transition-colors duration-200 hover:bg-[#F9FCFB] flex flex-col justify-between min-h-[180px] sm:min-h-[200px] ${
                   hasRightBorder ? 'md:border-r border-[#D5E8E2]' : ''
                 } ${
                   hasBottomBorderMd ? 'md:border-b border-[#D5E8E2]' : ''

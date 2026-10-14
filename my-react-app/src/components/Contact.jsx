@@ -52,20 +52,20 @@ export default function Contact() {
             </div>
 
             {/* Main Heading with 'smile?' highlighted in teal */}
-            <h2 className="text-[40px] sm:text-[48px] lg:text-[54px] font-bold text-[#141B2D] leading-[1.08] tracking-[-0.035em]">
+            <h2 className="text-[30px] xs:text-[36px] sm:text-[48px] lg:text-[54px] font-bold text-[#141B2D] leading-[1.1] tracking-[-0.035em]">
               Ready to feel good <br />
               about your <span className="text-[#0D8B75]">smile?</span>
             </h2>
 
             {/* Subtext */}
-            <p className="mt-5 text-[15.5px] sm:text-[16.5px] text-[#64748B] leading-[1.65] max-w-md">
+            <p className="mt-4 sm:mt-5 text-[15px] sm:text-[16.5px] text-[#64748B] leading-[1.65] max-w-md">
               Share a few details and our team will call you to find a time that feels right.
             </p>
 
-            <div className="w-full h-[1px] bg-gray-200/80 my-8 max-w-md" />
+            <div className="w-full h-[1px] bg-gray-200/80 my-6 sm:my-8 max-w-md" />
 
             {/* Trust point 1 */}
-            <div className="flex items-start gap-3.5 mb-7">
+            <div className="flex items-start gap-3.5 mb-6 sm:mb-7">
               <div className="mt-0.5 text-[#0D7C66]">
                 <Check className="w-5 h-5 stroke-[2.8]" />
               </div>
@@ -100,18 +100,18 @@ export default function Contact() {
 
           {/* Right Column: Exact Form Card matching reference */}
           <div className="lg:col-span-7">
-            <div className="bg-white rounded-[32px] sm:rounded-[36px] p-7 sm:p-10 shadow-[0_20px_50px_-12px_rgba(13,124,102,0.12)] border border-[#E5EFEA] relative">
+            <div className="bg-white rounded-[28px] sm:rounded-[36px] p-5 sm:p-10 shadow-[0_20px_50px_-12px_rgba(13,124,102,0.12)] border border-[#E5EFEA] relative">
               
               {/* Card Header: BOOK AN APPOINTMENT + Calendar Icon */}
               <div className="flex items-center justify-between mb-2">
-                <span className="text-[11.5px] sm:text-[12px] font-bold tracking-[0.16em] text-[#0D7C66] uppercase">
+                <span className="text-[11px] sm:text-[12px] font-bold tracking-[0.16em] text-[#0D7C66] uppercase">
                   BOOK AN APPOINTMENT
                 </span>
                 <Calendar className="w-5 h-5 text-[#0D7C66] stroke-[2]" />
               </div>
 
               {/* Card Title */}
-              <h3 className="text-[26px] sm:text-[30px] font-bold text-[#141B2D] mb-6 tracking-tight">
+              <h3 className="text-[24px] sm:text-[30px] font-bold text-[#141B2D] mb-5 sm:mb-6 tracking-tight">
                 Let's find your time.
               </h3>
 
@@ -167,7 +167,7 @@ export default function Contact() {
                         placeholder="Your name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200/90 bg-[#F9FBFA] focus:bg-white text-sm text-[#141B2D] focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none transition-all placeholder:text-gray-400"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200/90 bg-[#F9FBFA] focus:bg-white text-[16px] sm:text-sm text-[#141B2D] focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none transition-all placeholder:text-gray-400"
                       />
                     </div>
 
@@ -181,7 +181,7 @@ export default function Contact() {
                         placeholder="09009 590693"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200/90 bg-[#F9FBFA] focus:bg-white text-sm text-[#141B2D] focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none transition-all placeholder:text-gray-400"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200/90 bg-[#F9FBFA] focus:bg-white text-[16px] sm:text-sm text-[#141B2D] focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none transition-all placeholder:text-gray-400"
                       />
                     </div>
                   </div>
@@ -197,7 +197,7 @@ export default function Contact() {
                         placeholder="you@example.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200/90 bg-[#F9FBFA] focus:bg-white text-sm text-[#141B2D] focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none transition-all placeholder:text-gray-400"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200/90 bg-[#F9FBFA] focus:bg-white text-[16px] sm:text-sm text-[#141B2D] focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none transition-all placeholder:text-gray-400"
                       />
                     </div>
 
@@ -209,7 +209,7 @@ export default function Contact() {
                         type="datetime-local"
                         value={formData.dateTime}
                         onChange={(e) => setFormData({ ...formData, dateTime: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200/90 bg-[#F9FBFA] focus:bg-white text-sm text-[#141B2D] focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none transition-all text-gray-600"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200/90 bg-[#F9FBFA] focus:bg-white text-[16px] sm:text-sm text-[#141B2D] focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none transition-all text-gray-600"
                       />
                     </div>
                   </div>
@@ -222,7 +222,7 @@ export default function Contact() {
                     <select
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200/90 bg-[#F9FBFA] focus:bg-white text-sm text-[#141B2D] focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none transition-all"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200/90 bg-[#F9FBFA] focus:bg-white text-[16px] sm:text-sm text-[#141B2D] focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none transition-all"
                     >
                       <option value="">Select a service</option>
                       {servicesList.map((svc) => (
@@ -243,7 +243,7 @@ export default function Contact() {
                       placeholder="Tell us anything that would help us prepare..."
                       value={formData.notes}
                       onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200/90 bg-[#F9FBFA] focus:bg-white text-sm text-[#141B2D] focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none transition-all placeholder:text-gray-400 resize-none"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200/90 bg-[#F9FBFA] focus:bg-white text-[16px] sm:text-sm text-[#141B2D] focus:border-[#0D7C66] focus:ring-2 focus:ring-[#0D7C66]/15 outline-none transition-all placeholder:text-gray-400 resize-none"
                     />
                   </div>
 

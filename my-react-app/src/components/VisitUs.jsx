@@ -21,23 +21,23 @@ export default function VisitUs() {
             </div>
 
             {/* Main Headline */}
-            <h2 className="text-[40px] sm:text-[48px] lg:text-[54px] font-bold text-[#141B2D] leading-[1.08] tracking-[-0.035em] mb-10">
+            <h2 className="text-[30px] xs:text-[36px] sm:text-[48px] lg:text-[54px] font-bold text-[#141B2D] leading-[1.1] tracking-[-0.035em] mb-7 sm:mb-10">
               Come say <span className="text-[#0D8B75]">hello.</span>
             </h2>
 
             {/* 3 Detail Items */}
-            <div className="space-y-7 sm:space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               
               {/* Item 1: Address */}
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3.5 sm:gap-4">
                 <div className="mt-1 text-[#0D7C66]">
                   <MapPin className="w-5 h-5 stroke-[2.2]" />
                 </div>
                 <div>
-                  <h4 className="text-[16px] font-bold text-[#141B2D]">
+                  <h4 className="text-[15.5px] sm:text-[16px] font-bold text-[#141B2D]">
                     1433, Kayasth Mohalla Rd
                   </h4>
-                  <p className="text-[14px] text-[#64748B] mt-0.5 leading-relaxed">
+                  <p className="text-[13.5px] sm:text-[14px] text-[#64748B] mt-0.5 leading-relaxed">
                     Near Bhawarlal, Bombay Bazar, <br />
                     Hari Phatak, Indore, M.P. 453441
                   </p>
@@ -45,33 +45,33 @@ export default function VisitUs() {
               </div>
 
               {/* Item 2: Timings */}
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3.5 sm:gap-4">
                 <div className="mt-1 text-[#0D7C66]">
                   <Clock className="w-5 h-5 stroke-[2.2]" />
                 </div>
                 <div>
-                  <h4 className="text-[16px] font-bold text-[#141B2D]">
+                  <h4 className="text-[15.5px] sm:text-[16px] font-bold text-[#141B2D]">
                     Mon – Sat · 9:00 AM – 7:00 PM
                   </h4>
-                  <p className="text-[14px] text-[#64748B] mt-0.5">
+                  <p className="text-[13.5px] sm:text-[14px] text-[#64748B] mt-0.5">
                     Sunday by appointment
                   </p>
                 </div>
               </div>
 
               {/* Item 3: Phone */}
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3.5 sm:gap-4">
                 <div className="mt-1 text-[#0D7C66]">
                   <Phone className="w-5 h-5 stroke-[2.2]" />
                 </div>
                 <div>
                   <a
                     href="tel:09009590693"
-                    className="text-[16px] font-bold text-[#141B2D] hover:text-[#0D7C66] transition-colors block"
+                    className="text-[15.5px] sm:text-[16px] font-bold text-[#141B2D] hover:text-[#0D7C66] transition-colors block"
                   >
                     09009590693
                   </a>
-                  <p className="text-[14px] text-[#64748B] mt-0.5">
+                  <p className="text-[13.5px] sm:text-[14px] text-[#64748B] mt-0.5">
                     We're happy to help
                   </p>
                 </div>
@@ -80,7 +80,7 @@ export default function VisitUs() {
             </div>
 
             {/* Bottom WhatsApp Link */}
-            <div className="mt-10 pt-2">
+            <div className="mt-8 sm:mt-10 pt-2">
               <a
                 href="https://wa.me/9109009590693?text=Hello%20Dr.%20Neelam%20Dwivedi,%20I%20would%20like%20to%20visit%20your%20clinic%20in%20Bombay%20Bazar,%20Indore."
                 target="_blank"
@@ -96,7 +96,7 @@ export default function VisitUs() {
 
           {/* Right Column: Google Maps Container with Interactive Card */}
           <div className="lg:col-span-7">
-            <div className="relative rounded-[32px] sm:rounded-[36px] overflow-hidden shadow-[0_16px_45px_-12px_rgba(0,0,0,0.1)] border border-[#E2EBE6] bg-white h-[380px] sm:h-[420px] lg:h-[450px]">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-[0_16px_45px_-12px_rgba(0,0,0,0.1)] border border-[#E2EBE6] bg-white h-[320px] sm:h-[400px] lg:h-[450px]">
               
               {/* Google Maps Iframe showing exact location in Bombay Bazar Indore */}
               <iframe
@@ -112,25 +112,25 @@ export default function VisitUs() {
               />
 
               {/* Floating Google Map Card matching reference UI */}
-              <div className="absolute top-4 left-4 z-10 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-lg border border-gray-100 max-w-[280px] sm:max-w-[310px] hidden sm:block">
-                <h4 className="text-[15px] font-bold text-[#141B2D] leading-snug">
+              <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-10 bg-white/95 backdrop-blur-md rounded-2xl p-3 sm:p-4 shadow-lg border border-gray-100 max-w-[230px] sm:max-w-[310px]">
+                <h4 className="text-[14px] sm:text-[15px] font-bold text-[#141B2D] leading-snug">
                   Bombay Bazar
                 </h4>
-                <p className="text-[12px] text-gray-500 mt-0.5 truncate">
+                <p className="text-[11px] sm:text-[12px] text-gray-500 mt-0.5 truncate">
                   Bombay Bazar, Indore, Madhya Pradesh...
                 </p>
-                <div className="text-[11px] text-gray-400 mt-0.5">
+                <div className="text-[10px] sm:text-[11px] text-gray-400 mt-0.5">
                   Neelam Dental Clinic
                 </div>
 
-                <div className="mt-3 flex items-center gap-2">
+                <div className="mt-2.5 sm:mt-3 flex items-center gap-2">
                   <a
                     href={mapsUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 bg-[#1A73E8] hover:bg-[#1557b0] text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-sm transition-all"
+                    className="inline-flex items-center gap-1.5 bg-[#1A73E8] hover:bg-[#1557b0] text-white text-[11px] sm:text-xs font-semibold px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg shadow-sm transition-all"
                   >
-                    <ExternalLink className="w-3.5 h-3.5" />
+                    <ExternalLink className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                     <span>Open in Maps</span>
                   </a>
                 </div>

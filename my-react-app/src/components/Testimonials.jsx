@@ -84,12 +84,12 @@ export default function Testimonials() {
               </div>
 
               <div className="pt-4 border-t border-gray-200/60">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between gap-2">
                   <div>
                     <h4 className="font-bold text-[#141B2D] text-base">{item.name}</h4>
                     <p className="text-xs text-gray-500">{item.location}</p>
                   </div>
-                  <span className="text-[11px] font-semibold text-[#0D7C66] bg-[#EBF7F4] px-2.5 py-1 rounded-full">
+                  <span className="text-[11px] font-semibold text-[#0D7C66] bg-[#EBF7F4] px-2.5 py-1 rounded-full whitespace-nowrap">
                     {item.treatment}
                   </span>
                 </div>

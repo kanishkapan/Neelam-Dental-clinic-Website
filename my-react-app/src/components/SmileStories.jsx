@@ -90,7 +90,7 @@ export default function SmileStories({ onOpenBooking }) {
             </div>
 
             {/* Headline */}
-            <h2 className="text-[38px] sm:text-[46px] lg:text-[54px] font-bold leading-[1.08] tracking-[-0.035em]">
+            <h2 className="text-[30px] xs:text-[36px] sm:text-[46px] lg:text-[54px] font-bold leading-[1.1] tracking-[-0.035em]">
               <span className="text-[#141B2D] block">Small changes.</span>
               <span className="text-[#8B98A9] block font-medium">Big confidence.</span>
             </h2>
