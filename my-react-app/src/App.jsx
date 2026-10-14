@@ -6,6 +6,7 @@ import Difference from './components/Difference';
 import AboutDoctor from './components/AboutDoctor';
 import SmileStories from './components/SmileStories';
 import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AppointmentModal from './components/AppointmentModal';
@@ -44,6 +45,9 @@ export default function App() {
 
         {/* Verified Patient Reviews */}
         <Testimonials />
+
+        {/* Common Questions / FAQ matching exact reference */}
+        <FAQ />
 
         {/* Clinic Location & Appointment Contact */}
         <Contact onOpenBooking={() => handleOpenBooking()} />
