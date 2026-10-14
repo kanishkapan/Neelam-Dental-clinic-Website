@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import Difference from './components/Difference';
 import AboutDoctor from './components/AboutDoctor';
+import SmileStories from './components/SmileStories';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -31,8 +33,14 @@ export default function App() {
         {/* Specialized Dental Services matching reference */}
         <Services onOpenBooking={(service) => handleOpenBooking(service)} />
 
+        {/* The Neelam Difference matching reference */}
+        <Difference />
+
         {/* Detailed Profile of Dr. Neelam Dwivedi */}
         <AboutDoctor onOpenBooking={() => handleOpenBooking()} />
+
+        {/* Smile Stories matching exact reference layout + real clinic photos */}
+        <SmileStories onOpenBooking={(service) => handleOpenBooking(service)} />
 
         {/* Verified Patient Reviews */}
         <Testimonials />
